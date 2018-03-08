@@ -74,7 +74,7 @@ See documentation at [pgppgadmin config.inc.php-dist](https://github.com/phppgad
   * `PPA_DEFAULT_LANG`
   * `PPA_AUTOCOMPLETE`
   * `PPA_EXTRA_LOGIN_SECURITY`
-  * `PPA_OWNED_ONLY` - Note **Default true**
+  * `PPA_OWNED_ONLY`
   * `PPA_SHOW_COMMENTS`
   * `PPA_SHOW_ADVANCED`
   * `PPA_SHOW_SYSTEM`

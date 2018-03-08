@@ -118,9 +118,9 @@ if (!empty($_ENV['PPA_EXTRA_LOGIN_SECURITY'])) {
 }
 
 if (!empty($_ENV['PPA_OWNED_ONLY'])) {
-    $conf['owned_only'] = $_ENV['PPA_OWNED_ONLY'];
-} else {
     $conf['owned_only'] = true;
+} else {
+    $conf['owned_only'] = false;
 }
 
 if (!empty($_ENV['PPA_SHOW_COMMENTS'])) {
