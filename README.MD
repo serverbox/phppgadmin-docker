@@ -97,4 +97,3 @@ Docker, Kubernetes etc has good documentation. Please feel free to refer to that
 # Contributions
 If you want to make this better, eg by ading tests or better docs. Please feel free
  to create a Pull Request
-
