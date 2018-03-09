@@ -97,3 +97,25 @@ Docker, Kubernetes etc has good documentation. Please feel free to refer to that
 # Contributions
 If you want to make this better, eg by ading tests or better docs. Please feel free
  to create a Pull Request
+
+# Known issues
+## AWS / User does not own DB
+### Work Around
+If you encounter the following. Collapse the DB trees in the left column
+ and log in again.
+
+### Issue
+**rdsadmin**, not the user that was created is the superuser.
+This was encountered when running php7
+
+If you are using this in AWS with RDS instances you may get issues that look
+ like login / session persistance bugs. This happens when you log into a database
+ and the tree expands trying to access all databases. The **rdsadmin** database is
+ inaccessable and so the login credentials are then reset.
+ From what I can see this is due to the way AWS creates / manages the PostgreSQL
+ instacnes. AWS creates an **rdsadmin** user which then creates the master user.
+ This master user is NOT a superuser. You cannot get access to the rdsadmin
+ database. As such if you need to collapse the tree on the left and login again.
+ You will probably encounter this elsewhere if you use a user which does not have
+ **USAGE** on all databases.
+
