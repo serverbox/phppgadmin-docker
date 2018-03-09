@@ -1,5 +1,5 @@
 <?php
-error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED);
+error_reporting(E_ALL & ~E_DEPRECATED);
 
 /*
  * See https://github.com/phppgadmin/phppgadmin/blob/master/conf/config.inc.php-dist
