@@ -36,8 +36,8 @@ COPY run.sh /run.sh
 RUN chmod u+rwx /run.sh
 
 # Calculate download URL
-ENV VERSION 5-1-0
-ENV URL https://github.com/phppgadmin/phppgadmin/archive/REL_${VERSION}.tar.gz
+ENV VERSION 5-1-1
+ENV URL https://github.com/timothyclarke/phppgadmin/archive/REL_${VERSION}.tar.gz
 LABEL version=$VERSION
 
 # Download tarball, verify it using gpg and extract
