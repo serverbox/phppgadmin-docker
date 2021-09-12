@@ -1,4 +1,5 @@
-name: CI to GitHub Container Registory (ghcr.io)
+name: CI for DockerHub
+#name: CI to GitHub Container Registory (ghcr.io)
 
 on:
   push:
